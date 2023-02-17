@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="true"
+    android:orientation="vertical"
+    tools:context=".Product_DetailPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgBackDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <ImageView
+            android:id="@+id/imgProductDetail"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edt"
+            android:src="@drawable/ic_baseline_photo_camera_24" />
+
+        <TextView
+            android:id="@+id/txtNameDetailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+            android:text="Tên sản phẩm"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtPriceDetailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:text="Giá sản phẩm"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <Spinner
+
+            android:id="@+id/spinnerProductDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edt" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnRemoveDetailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/shape_rcv"
+            android:text="Xóa " />
+
+        <Button
+            android:id="@+id/btnSaveDetailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/shape_rcv"
+            android:text="Lưu" />
+    </LinearLayout>
+
+</LinearLayout>
